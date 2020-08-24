@@ -1,0 +1,392 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100%;
+}
+
+#content-wrap {
+    padding-bottom: 150px;
+}
+
+#header {
+    background-color: darkcyan;
+    padding: 10px;
+    margin: 0px 0px 10px 0px;
+    height: 80px;
+    line-height: 30px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: block;
+    text-transform: uppercase;
+    z-index: 9999;
+}
+
+.header-nav li {
+    float: right;
+    margin-top: 0;
+    margin-right: 5px;
+    width: 20px;
+}
+
+#footer {
+    background-color: #2f2f2f;
+    padding: 10px;
+    margin: 10px 0px 0px 0px;
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    border-radius: 10%;
+}
+
+.header-title {
+    text-align: left;
+    font-size: 25px;
+    float: left;
+    margin-left: 5px;
+}
+
+.header-nav {
+    text-align: right;
+    display: block;
+}
+
+.header-nav a {
+    padding: 10px;
+}
+
+.content, .cv-page-content {
+    padding-top: 100px;
+    margin-bottom: 20px;
+    animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    /* Firefox */
+    -webkit-animation: fadein 2s;
+    /* Safari and Chrome */
+    -o-animation: fadein 2s;
+    /* Opera */
+}
+
+.content {
+    text-align: center;
+}
+
+#footer .column a {
+    display: block;
+    max-width: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#header a:hover {
+    color: #222;
+}
+
+#footer a:hover {
+    color: #F6A623;
+}
+
+.column {
+    min-width: 200px;
+    max-width: 280px;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+
+.picture {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.left-column {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+.cv-container {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cv-author {
+    text-align: center;
+}
+
+.cv-author, .employer, h1, h2, h3, h4, h5, h6, .landing-btn {
+    text-transform: uppercase;
+}
+
+.cv-content h3 {
+    text-align: center;
+}
+
+.cv-author img {
+    height: 15%;
+    width: 15%;
+}
+
+.job-description {
+    margin-left: 15px;
+}
+
+.cv-content p {
+    text-align: justify;
+}
+
+.gallery-image {
+    width: 400px;
+    height: 400px;
+    margin: 10px;
+    display: inline-block;
+    position: relative;
+}
+
+.gallery-pic {
+    opacity: 1;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    margin: 0;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.gallery-image:hover .gallery-pic {
+    opacity: 0.3;
+}
+
+.gallery-image:hover .middle {
+    opacity: 1;
+}
+
+.image-text {
+    color: black;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+/* CSS for landing page only */
+
+.bg-image {
+    background-image: url("mountains.JPG");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.bg-text {
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 60%;
+    padding: 20px;
+    text-align: center;
+    animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    /* Firefox */
+    -webkit-animation: fadein 2s;
+    /* Safari and Chrome */
+    -o-animation: fadein 2s;
+    /* Opera */
+}
+
+.landing-btn {
+    background-color: slategray;
+    opacity: 0.5;
+    border: none;
+    padding: 16px 32px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 0.5em;
+    transition: 0.5s;
+}
+
+.landing-btn:hover {
+    opacity: 1.0;
+}
+
+/* CSS for fading in text and button on landing page */
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadein {
+    /* Firefox */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein {
+    /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadein {
+    /* Opera */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive pages */
+
+@media only screen and (max-width: 750px) {
+    body {
+        width: 100%;
+    }
+    .cv-page-content, .content, .cv-author, .cv-content, .cv-container {
+        width: 100%;
+    }
+    .cv-page-content, .content {
+        padding-top: 200px;
+    }
+    .cv-content p {
+        max-width: 80%;
+        text-align: left;
+    }
+    #header, #footer {
+        height: auto;
+    }
+    #content-wrap {
+        padding-bottom: 300px;
+    }
+    .header-nav {
+        padding: 0px;
+    }
+    #header a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        float: none;
+    }
+    img, .cv-author img {
+        width: 50%;
+    }
+    small {
+        display: block;
+    }
+    .spaces {
+        display: none;
+    }
+    .gallery-image, .gallery-pic {
+        width: 80%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .picture {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    .left-column {
+        width: 80%;
+        margin: 10%;
+        background-color: white;
+        line-height: 1;
+        font-size: 1em;
+        float: none;
+    }
+}
+
+@media only screen and (min-width: 751px) and (max-width: 1320px) {
+    .left-column {
+        width: 80%;
+        margin: 10%;
+        background-color: white;
+        line-height: 1;
+        font-size: 1em;
+        float: none;
+    }
+    .picture {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        width: 20%;
+    }
+
+    .gallery-image {
+        width: 40vh;
+        height: 40vh;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .gallery-pic {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
