@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A personal website showing Luke Haresign's HTML and CSS abilities">
+    <meta name="keywords" content="HTML, CSS, Luke Haresign, Luke, Haresign, Web Development, Web, Development">
+    <meta name="author" content="Luke Haresign">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="C:\Users\Elev\Documents\HTML\Images\apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="C:\Users\Elev\Documents\HTML\Images\favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="C:\Users\Elev\Documents\HTML\Images\favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Luke Haresign</title>
+</head>
+
+<body>
+    <div id="page-container">
+        <div id="content-wrap">
+            <!--Header and links -->
+            <div id="header">
+                <div class="container">
+                    <a class="header-title" href="home.html">Luke Haresign</a>
+                    <ul class="header-nav">
+                        <a href="about.html">About</a>
+                        <a href="cv.html">CV</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="map.html">Notable Places</a>
+                        <a href="contact.html">Contact</a>
+                    </ul>
+                </div>
+            </div>
+            <!-- Content for the web page -->
+            <div class="content">
+                <div class="contact-container">
+                    <h1>Contact Me</h1>
+                    <div class="contact-form">
+                        <form action="mailto:luke_haresign@hotmail.co.uk?subject=Feedback" method="post"
+                            onsubmit="alert('Thanks for your feedback!');" enctype="text/plain">
+                            <input type="text" class="form-box" id="fname" placeholder="First Name"><br>
+                            <input type="text" class="form-box" id="lname" placeholder="Last Name"><br>
+                            <input type="text" class="form-box" id="email-address" placeholder="What's your email?"><br>
+                            <input type="text" class="feedback-box" id="feedback"
+                                placeholder="Please submit your feedback here..."><br>
+                            <input type="submit" class="form-button" value="Send">
+                            <input type="reset" value="Reset">
+                        </form>
+                    </div>
+                </div>
+                <!-- Footer and links -->
+                <footer id="footer">
+                    <div class="container">
+                        <div class="column">
+                            <h4>Connect with me</h4>
+                            <!-- Add font awesome icons -->
+                            <table class="fa-icons">
+                                <tr>
+                                    <td><a href="https://www.linkedin.com/in/lukeharesign/" class="fa fa-linkedin"></a>
+                                    </td>
+                                    <td><a href="https://github.com/lharesign" class="fa fa-github"></a></td>
+                                    <td><a href="https://www.instagram.com/lukeharesign/" class="fa fa-instagram"></a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+</body>
+
+</html>
