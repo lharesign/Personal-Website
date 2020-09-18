@@ -216,14 +216,14 @@ a {
     width: 60%;
 }
 
-.cv-author, .employer, h1, h2, h3, h4, h5, h6, .landing-btn {
+.cv-author, h1, h2, h3, h4, h5, h6, .landing-btn {
     text-transform: uppercase;
 }
 
 /* Styling for the CV page */
 
 .cv-container {
-    width: 50%;
+    width: 65%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -241,12 +241,44 @@ a {
     width: 15%;
 }
 
-.job-description {
-    margin-left: 15px;
+.accordion-item {
+    border: 1px solid #e5e5e5;
+    border-collapse: collapse;
+    background: linear-gradient(to bottom, #fff, #f9f9f9);
+    padding: 10px;
+    position: relative;
+    align-items: center;
+    min-height: 51px;
+    list-style-type: none;
+    text-transform: none;
 }
 
-.cv-content p {
-    text-align: justify;
+.accordion-item:hover {
+    cursor: pointer;
+}
+
+.accordion-item i {
+    float: right;
+    position: absolute;
+    bottom: 40%;
+    right: 10px;
+}
+
+.employer-name {
+    width: 95%;
+}
+
+.accordion-panel {
+    padding: 0 18px;
+    background-color: #f4f4f4;
+    display: none;
+    height: auto;
+    border-top: 1px solid #e5e5e5;
+    padding: 10px 10px;
+}
+
+.accordion-panel article p {
+    padding: 10px;
 }
 
 /* Styling for the Gallery page */
@@ -579,6 +611,8 @@ a {
     .gallery-image, .gallery-pic {
         width: 80%;
         height: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
     .picture {
         float: none;
