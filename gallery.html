@@ -9,14 +9,13 @@
     <meta name="keywords" content="HTML, CSS, Luke Haresign, Luke, Haresign, Web Development, Web, Development">
     <meta name="author" content="Luke Haresign">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="apple-touch-icon" sizes="180x180"
-        href="C:\Users\Elev\Documents\HTML\Images\apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32"
-        href="C:\Users\Elev\Documents\HTML\Images\favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16"
-        href="C:\Users\Elev\Documents\HTML\Images\favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="C:\Users\Elev\Documents\HTML\Images\apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="C:\Users\Elev\Documents\HTML\Images\favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="C:\Users\Elev\Documents\HTML\Images\favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="gallery-script.js" defer></script>
+    <script src="elevator-script.js" defer></script>
     <title>Luke Haresign</title>
 </head>
 
@@ -36,78 +35,13 @@
                     </ul>
                 </div>
             </div>
-            <!-- Content for the web page -->
-            <div class="content">
-                <div class="gallery-image">
-                    <img class="gallery-pic" src="Images\agioas nikoloas.JPEG" alt="Agioas Nikoloas, Crete">
-                    <div class="middle">
-                        <div class="image-text">Agioas Nikoloas, Crete</div>
-                    </div>
+            <!-- Content for the web page - images in image gallery added using JavaScript -->
+            <div id="content-container">
+                <div id="gallery-container" class="content">
                 </div>
-                <div class="gallery-image">
-                    <img class="gallery-pic" src="Images\berlin.JPEG" alt="Graffiti in Berlin, Germany">
-                    <div class="middle">
-                        <div class="image-text">Graffiti in Berlin, Germany</div>
-                    </div>
-                </div>
-                <div class="gallery-image">
-                    <img class="gallery-pic" src="Images\brooklyn bridge.JPG" alt="Brooklyn Bridge, New York, USA">
-                    <div class="middle">
-                        <div class="image-text">Brooklyn Bridge, New York, USA</div>
-                    </div>
-                </div>
-                <div class="gallery-image">
-                    <img class="gallery-pic" src="Images\colosseum.JPG" alt="The Colosseum, Rome, Italy">
-                    <div class="middle">
-                        <div class="image-text">The Colosseum, Rome, Italy</div>
-                    </div>
-                </div>
-                <div class="gallery-image">
-                    <img class="gallery-pic" src="Images\eiffel tower.JPEG" alt="The Eiffel Tower, Paris, France">
-                    <div class="middle">
-                        <div class="image-text">The Eiffel Tower, Paris, France</div>
-                    </div>
-                </div>
-                <div class="gallery-image">
-                    <img class="gallery-pic" src="Images\kyoto.JPEG" alt="Kyoto, Japan">
-                    <div class="middle">
-                        <div class="image-text">Kyoto, Japan</div>
-                    </div>
-                </div>
-                <div class="gallery-image">
-                    <img class="gallery-pic" src="Images\machu picchu.JPEG" alt="Machu Picchu, Peru">
-                    <div class="middle">
-                        <div class="image-text">Machu Picchu, Peru</div>
-                    </div>
-                </div>
-                <div class="gallery-image">
-                    <img class="gallery-pic" src="Images\old harry rocks.JPG" alt="Old Harry Rocks, England">
-                    <div class="middle">
-                        <div class="image-text">Old Harry Rocks, England</div>
-                    </div>
-                </div>
-                <div class="gallery-image">
-                    <img class="gallery-pic" src="Images\salar de uyuni.JPEG" alt="Salar de Uyuni, Bolivia">
-                    <div class="middle">
-                        <div class="image-text">Salar de Uyuni, Bolivia</div>
-                    </div>
-                </div>
-                <div class="gallery-image">
-                    <img class="gallery-pic" src="Images\samaria gorge.JPEG" alt="Samaria Gorge, Crete">
-                    <div class="middle">
-                        <div class="image-text">Samaria Gorge, Crete</div>
-                    </div>
-                </div>
-                <div class="gallery-image">
-                    <img class="gallery-pic" src="Images\smogen.jpg" alt="Smogen, Sweden">
-                    <div class="middle">
-                        <div class="image-text">Smogen, Sweden</div>
-                    </div>
-                </div>
-                <div class="gallery-image">
-                    <img class="gallery-pic" src="Images\ven.jpg" alt="Ven, Sweden">
-                    <div class="middle">
-                        <div class="image-text">Ven, Sweden</div>
+                <div id="scroll-elevator" class="elevator-button">
+                    <div>
+                        <a href="#content-container"><i class="fa fa-chevron-up"></i>Back to top</a>
                     </div>
                 </div>
             </div>

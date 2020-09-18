@@ -94,7 +94,7 @@ a {
     color: #222;
 }
 
-/* Styling for the footer */
+/* Styling for the footer & elevator */
 
 #footer {
     background-color: #2f2f2f;
@@ -104,6 +104,7 @@ a {
     position: absolute;
     bottom: 0;
     width: 100%;
+    text-align: left;
 }
 
 #footer a:hover {
@@ -129,6 +130,49 @@ a {
     width: 30px;
     text-align: center;
     text-decoration: none;
+}
+
+.elevator-button {
+    visibility: hidden;
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+    opacity: 0;
+    transition: visibility 0s, opacity .3s ease-in-out;
+    display: block;
+    background-color: darkcyan;
+    border-radius: 40px;
+    height: 40px;
+    box-shadow: 0 5px 7px 0 rgba(0, 0, 0, .3);
+    z-index: 999;
+}
+
+.scroll-elevator-sticky {
+    visibility: visible;
+    opacity: 1;
+}
+
+.elevator-button:hover {
+    background-color: #222;
+}
+
+.elevator-button a {
+    color: #fff;
+    line-height: 40px;
+    font-size: 0.9em;
+    padding-right: 15px;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.elevator-button a i {
+    padding-right: 10px;
+    color: #fff;
+}
+
+.elevator-button a i:hover {
+    color: #fff;
+    opacity: 1;
 }
 
 /* Add a hover effect to social media links */
@@ -535,8 +579,6 @@ a {
     .gallery-image, .gallery-pic {
         width: 80%;
         height: auto;
-        margin-left: auto;
-        margin-right: auto;
     }
     .picture {
         float: none;
@@ -575,8 +617,6 @@ a {
     .gallery-image {
         width: 40vh;
         height: 40vh;
-        margin-left: auto;
-        margin-right: auto;
     }
     .gallery-pic {
         width: 100%;
