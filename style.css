@@ -200,6 +200,7 @@ a {
 .picture {
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 1.67em;
 }
 
 .left-column {
@@ -585,9 +586,7 @@ a {
     #header, #footer {
         height: auto;
     }
-    #content-wrap {
-        padding-bottom: 300px;
-    }
+    
     .header-nav {
         padding: 0px;
     }
@@ -618,11 +617,12 @@ a {
         float: none;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 1.67em;
         width: 50%;
     }
     .left-column {
         width: 80%;
-        margin: 5%;
+        margin: auto;
         background-color: white;
         line-height: 1;
         font-size: 1em;
@@ -636,7 +636,7 @@ a {
 @media only screen and (min-width: 751px) and (max-width: 1320px) {
     .left-column {
         width: 80%;
-        margin: 5%;
+        margin: auto;
         background-color: white;
         line-height: 1;
         font-size: 1em;
@@ -646,6 +646,7 @@ a {
         float: none;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 1.67em;
         width: 20%;
     }
     .gallery-image {
