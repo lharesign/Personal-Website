@@ -15,6 +15,7 @@
     <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="elevator-script.js" defer></script>
+    <script src="mobileNavMenuScript.js" defer></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179286799-1"></script>
@@ -33,7 +34,7 @@
     <div id="page-container">
         <div id="content-wrap">
             <!--Header and links -->
-            <div id="header">
+            <header id="header">
                 <div class="container">
                     <a class="header-title" href="home.html">Luke Haresign</a>
                     <ul class="header-nav">
@@ -44,7 +45,20 @@
                         <a href="contact.html">Contact</a>
                     </ul>
                 </div>
-            </div>
+                <div class="topnav">
+                    <div id="myLinks">
+                        <!-- Links for mobile hamburger menu - hidden by default -->
+                        <a href="about.html">About</a>
+                        <a href="cv.html">CV</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="map.html">Notable Places</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+            </header>
             <!-- Content for the web page -->
             <div id="content-container" class="content">
                 <h1>Welcome to the website</h1>
