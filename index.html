@@ -1,38 +1,251 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A personal website showing Luke Haresign's HTML and CSS abilities">
-    <meta name="keywords" content="HTML, CSS, Luke Haresign, Luke, Haresign, Web Development, Web, Development">
-    <meta name="author" content="Luke Haresign">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="Images\apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="Images\favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="Images\favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179286799-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+  <title>Luke Haresign</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-        gtag('config', 'UA-179286799-1');
-    </script>
+  <!-- Favicons -->
+  <link href="assets/img/favicon.ico" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-    <title>Luke Haresign</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179286799-1"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-179286799-1');
+  </script>
+  
 </head>
 
-<body class="landing-page">
-    <div class="bg-image"></div>
-    <div class="bg-text">
-        <h1>Luke Haresign</h1>
-        <a class="landing-btn" href="home">Enter</a>
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Luke Haresign</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://www.linkedin.com/in/lukeharesign/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/lharesign" class="github"><i class="bx bxl-github"></i></a>
+          <a href="https://www.instagram.com/lukeharesign/" class="instagram"><i class="bx bxl-instagram"></i></a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <li><a href="#interests" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Interests</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
     </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>Luke Haresign</h1>
+      <p>I'm a <span class="typed" data-typed-items="software engineer, full stack developer"></span></p>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>About</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>Software Engineer.</h3>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>27</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Hometown:</strong> <span>Helsingborg, Sweden</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>From:</strong> <span>United Kingdom</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Superpower of Choice:</strong> <span>Teleportation</span></li>
+
+                </ul>
+              </div>
+            </div>
+            <p>
+              I'm a Software Engineer based in Helsingborg, Sweden with experience in HTML, CSS, JavaScript, React, C#, and MSSQL. I moved to Sweden in July 2018, and can now speak fluent Swedish. Outside of work I'm a very active person and have a passion for squash, snowboarding and all things travel.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Resume</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up">
+            <h3 class="resume-title">Summary</h3>
+            <div class="resume-item pb-0">
+              <h4>Luke Haresign</h4>
+              <p><em>Passionate and driven Software Engineer with education within C#, HTML, CSS, JavaScript &amp; React.</em></p>
+              <ul>
+                <li>Helsingborg, SE</li>
+                <li>luke@lukeharesign.com</li>
+              </ul>
+            </div>
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Software Engineer</h4>
+              <h5>2021 - Present</h5>
+              <p><em>Plug &amp; Trade, Helsingborg</em></p>
+              <ul>
+                <li>Working closely with our customers to implement improvements and new features to their existing systems</li>
+                <li>Responsible for full stack, from React frontend to a .NET backened with MSSQL databases</li>
+                <li>Migrating existing REST APIs to GraphQL</li>
+                <li>Working with Dev Ops to release the latest software. We use a combination of Jenkins, Kubernetes and Docker</li>
+              </ul>
+            </div>
+          </div>
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <h3 class="resume-title">Education</h3>
+              <div class="resume-item">
+                <h4>Programming in C# I, II &amp; III</h4>
+                <h5>Aug 2020 - ongoing</h5>
+                <p><em>Malmö University</em></p>
+                <p>These courses focus on developing basic programming skills to build well-structured applications utilising the .NET Framework, based on the basic concepts of OOP</p>
+              </div>
+              <div class="resume-item">
+                <h4>React - The Complete Guide</h4>
+                <h5>Nov 2020 - Feb 2021</h5>
+                <p><em>Udemy</em></p>
+                <p>This course covered React.js in a practice-oriented way, using all the latest patterns and best practices. It taught me the key fundamentals as well as advanced concepts and related topics</p>
+              </div>
+              <div class="resume-item">
+                <h4>Programming Fundamentals</h4>
+                <h5>Aug 2020 - Dec 2020</h5>
+                <p><em>Komvux Helsingborg</em></p>
+                <p>I studied Frontend Development, including HTML, CSS, JavaScript and jQuery. The course included individual and group projects, teaching us how to use version control and Agile software</p>
+              </div>
+            </div>
+        </div>
+
+      </div>
+    </section><!-- End Resume Section -->
+
+    <!-- ======= Interests Section ======= -->
+    <section id="interests" class="interests">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Interests</h2>
+        </div>
+
+        <div class="row interests-row">
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
+            <div class="icon"><i class="bi bi-snow"></i></div>
+            <h4 class="title"><a href="">Snowboarding</a></h4>
+            <p class="description">I love snowboarding. I was lucky enough to do a ski season in the French Alps after university, and cannot get enough of the slopes. There's no better feeling than fresh powder under your board</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon"><i class="bi bi-trophy"></i></div>
+            <h4 class="title"><a href="">Squash</a></h4>
+            <p class="description">I've been playing squash since for over 10 years and am a member of the Helsingborg Squash Club, playing at least once a week and (slowly!) making my way up the divisions</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon"><i class="bi bi-signpost"></i></div>
+            <h4 class="title"><a href="">Travelling</a></h4>
+            <p class="description">I really enjoy exploring new places and experiencing new cultures. I've spent two months backpacking around South America and one month around Europe</p>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Interests Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>If you'd like to get in touch, please use one of the methods below</p>
+        </div>
+
+        <div class="row" data-aos="fade-in">
+           <div class="col-lg-6 d-flex align-items-stretch">
+            <div class="info">
+              
+              <div class="email">
+                <a href="mailto:luke@lukeharesign.com?">
+                  <i class="bi bi-envelope"></i>
+                  <h4>Email:</h4>
+                  <p>luke@lukeharesign.com</p>
+                </a>
+              </div>
+
+              <div class="email">
+                <a href="https://www.linkedin.com/in/lukeharesign/">
+                  <i class="bi bi-linkedin"></i>
+                  <h4>LinkedIn:</h4>
+                  <p>Luke Haresign</p>
+                </a>
+              </div>
+              
+            </div>
+          </div> 
+        </div>
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
